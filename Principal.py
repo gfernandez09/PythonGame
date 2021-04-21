@@ -1,2 +1,4 @@
+from Juego import Juego
 
-class Principal:
+juego = Juego()
+juego.CreacionPersonajes()
