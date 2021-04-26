@@ -18,10 +18,8 @@ class Personaje:
         self.tecnicas.append(Tecnica)
 
     def detalles(self):
-        return "Tipo: " + self.tipus + "\nAtaque: " + str(self.atac) + \
-               "\nVida: " + str(self.vida) + "\nTecnicas{\n\t[" + \
-               str(self.tecnicas[0]) + "]\n\t[" + str(self.tecnicas[1]) + \
-               "]\n\t[" + str(self.tecnicas[2]) + "]\n}"
+        return "Tipo: " + self.tipus + "\nAtaque: " + str(self.atac) + "\nVida: " + str(self.vida) + "\nTecnicas{\n\t["
+        + str(self.tecnicas[0]) + "]\n\t[" + str(self.tecnicas[1]) + "]\n\t[" + str(self.tecnicas[2]) + "]\n}"
 
     def getNom(self):
         return self.nom
@@ -38,8 +36,8 @@ class Personaje:
     def getEscudo(self):
         return self.escudo
 
-    def getTecnica(self,num):
-        return self.tecnicas[num-1]
+    def getTecnica(self, num):
+        return self.tecnicas[num - 1]
 
     def setNom(self, nom):
         self.nom = nom
