@@ -1,6 +1,3 @@
-from Tecnica import Tecnica
-
-
 class Personaje:
 
     def __int__(self):
@@ -14,13 +11,16 @@ class Personaje:
         self.escudo = escudo
         self.tecnicas = [tecnica1, tecnica2, tecnica3]
 
+    # Llenamos la lista tecnica
     def rellenarArray(self, Tecnica):
         self.tecnicas.append(Tecnica)
 
+    # Método para listar los detalles del personaje junto con sus tecnicas
     def detalles(self):
         return "Tipo: " + self.tipus + "\nAtaque: " + str(self.atac) + "\nVida: " + str(self.vida) + "\nTecnicas{\n\t["
         + str(self.tecnicas[0]) + "]\n\t[" + str(self.tecnicas[1]) + "]\n\t[" + str(self.tecnicas[2]) + "]\n}"
 
+    #Getters & Setters
     def getNom(self):
         return self.nom
 

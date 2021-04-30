@@ -4,6 +4,7 @@ class Tecnica:
         self.dano = dano
         self.contador = contador
 
+    # Getters & Setters
     def getNombre(self):
         return self.nombre
 
