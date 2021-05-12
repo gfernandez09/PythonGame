@@ -20,7 +20,7 @@ class Personaje:
         return "Tipo: " + self.tipus + "\nAtaque: " + str(self.atac) + "\nVida: " + str(self.vida) + "\nTecnicas{\n\t["
         + str(self.tecnicas[0]) + "]\n\t[" + str(self.tecnicas[1]) + "]\n\t[" + str(self.tecnicas[2]) + "]\n}"
 
-    #Getters & Setters
+    # Getters & Setters
     def getNom(self):
         return self.nom
 
